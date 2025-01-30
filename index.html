@@ -9,9 +9,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <!-- lien vers le fichier CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Feather Icons -->
 <script src="https://unpkg.com/feather-icons"></script>
@@ -31,8 +32,12 @@
 	<div class="logo">
 		<img src="images/logo.svg" alt="Logo Candleaf">
 	</div>
-
-<!-- Onglets -->
+	
+	
+	<div class="menu_mobil">
+		<i data-feather="menu"></i>
+	</div>
+	<!-- Onglets -->
 	<nav>
 		<ul>
 			<li>
@@ -79,7 +84,7 @@
 
 
 <!-- Product -->
-<section class="products">
+<section class="products"  id="products">
 <div class="products-content">
 
 <!-- product title-->
@@ -93,7 +98,7 @@
 
 <!-- product card n°1 -->
 		<div class="product-card">
-			<a href="product.html">
+			<a href="product.html" target="_blank">
 				<p><img src="images/products/product-1.png" class="product-image"></p>
 				<div class="product-card-infos">
 					<h4 class="product-card-title">Spiced Mint</h4>
@@ -206,7 +211,11 @@
 
 <!-- image -->
 	<div class="image-about-us">
-		<img src="images/about-us-image.jpg" alt="Candleaf-candle-image">
+		<!-- <img src="images/about-us-image.jpg" alt="Candleaf-candle-image"> -->
+		<!-- <iframe width="100%" height="380" src="https://www.youtube.com/embed/NuaBN_0TFCg" title="TUTO #2 • Votre première bougie coulée ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+		<div class='embed-container'>
+			<iframe src='https://www.youtube.com/embed/NuaBN_0TFCg' frameborder='0' allowfullscreen></iframe>
+		</div>
 	</div>
 </div>
 </section>
@@ -381,7 +390,7 @@
 
 			<div class="link-info">
 				<h6>Info</h6>
-				<a href="#Contact us" class="footer-links">Contact us</a>
+				<a href="mailto:contact@candleaf.com" class="footer-links">Contact us</a>
 				<a href="#Privacy Policies" class="footer-links">Privacy Policies</a>
 				<a href="#Terms & Conditions" class="footer-links">Terms & Conditions</a>
 			</div>

@@ -1,0 +1,102 @@
+/* ===============================
+        Section : Header 
+=============================== */
+
+/* ------ Disposition éléments Header ------ */
+header {
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #CBDBCD;
+    position: sticky;
+    top: 0px;
+    z-index: 999999;
+}
+
+.header-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 75rem; /* 1200px */
+    height: 4rem; /* 64px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px; /* 0 2rem */
+}
+
+.menu_mobil{
+    display: none;
+}
+
+/* ------ Logo ------ */
+.logo img {
+    height: 2.5rem; /* 40px */
+    width: auto;
+}
+
+/* ------ Disposition éléments Navigations ------ */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem; /* 40px */
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ Style Navigations ------ */
+header nav li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ------ Style dropdown-link ------ */
+header nav ul li .dropdown-link {
+    vertical-align: middle;
+    display: flex;
+    gap: 0.25rem; /* 4px */
+    color: #333;
+}
+
+/* ------ Style Hover Navigations ------ */
+header nav li a:hover {
+    color: #000;
+}
+
+header nav ul li .dropdown-link svg{
+    stroke-width: 2px;
+}
+
+header div.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* 16px */
+}
+
+header div.icons a{
+    color: #333;
+}
+
+header div.icons a:hover {
+    color: #000;
+}
+
+/* ===============================
+            Media query
+=============================== */
+
+@media screen and (max-width: 820px) {
+    .product-list {
+        grid-template-columns: repeat(2,50%);
+    }
+    nav{
+        display: none;
+    }
+    .icons{
+        display: none !important;
+    }
+    .menu_mobil{
+        display: block;
+    }
+}
