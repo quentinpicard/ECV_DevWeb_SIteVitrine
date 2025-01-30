@@ -1,0 +1,478 @@
+/* ===============================
+            Styles 
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1D252C;
+    line-height: 100%;
+}
+
+h4 {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 100%;
+}
+
+h6 {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+p {
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 100%;
+    margin: 0px;
+}
+
+svg.feather {
+  width: 24px; /* Largeur de l'icône */
+  height: 24px; /* Hauteur de l'icône */
+  vertical-align: middle; /* Aligne l'icône avec le texte */
+}
+
+.btn-primary {
+    display: inline-block;
+    width: auto;
+    padding: 12px 36px;
+    background-color: #56B280;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #3B8D60;
+}
+
+
+
+/* ======================
+    Section : Header 
+=============================== */
+
+/* ------ Disposition éléments Header ------ */
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 128px; /* haut, droite, bas, gauche */ /* haut-bas, droite-gauche*/
+    background-color: #ffffff
+}
+
+/* ------ Logo ------ */
+.logo img {
+    height: 40px; /* Ajuste la hauteur du logo*/
+    width: auto; /* Garde les proportions */
+}
+
+/* ------ Disposition éléments Navigations ------ */
+header nav ul {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Aligne les liens sur une ligne */
+    gap: 40px; /* Espace entre les items */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------ Style Navigations ------ */
+header nav li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ------ Style dropdown-link ------ */
+header nav ul li .dropdown-link {
+    vertical-align: middle;
+    display: flex;
+    gap: 4px;
+    color: #333;
+}
+
+/* ------ Style Hover Navigations ------ */
+header nav li a:hover {
+    color: #000 ;
+}
+
+header nav ul li .dropdown-link svg{
+    stroke-width: 2px;
+}
+
+header div.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+header div.icons a{
+    color: #333;
+}
+
+header div.icons a:hover {
+    color: #000;
+}
+
+
+/* ===============================
+            Section : Body 
+=============================== */
+
+/* ===============================
+            Section : Hero 
+=============================== */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('images/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 64px);
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 32px 24px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.hero-content h4 {
+    max-width: 560px;
+    margin: 0px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+}
+
+
+
+/* ===============================
+          Section : Products 
+=============================== */
+
+/* ------ Products ------ */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px;
+    gap: 40px ;
+}
+
+.products-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.products-title h4 {
+    color: #5E6E89;
+    font-weight: 600;
+}
+
+/* ------ products cards ------ */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 36px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 260px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #F7F8FA;
+}
+
+.product-card-infos{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px ;
+    gap: 8px;
+}
+
+.product-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.product-card p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    color: #56B280;
+}
+
+
+
+
+/* ===============================
+          Section : About us 
+=============================== */
+
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 128px;
+    align-content: center;
+    background-color: #F7F8FA;
+}
+
+.about-us-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Évite d'étirer les enfants */
+    gap: 40px;
+    padding: 96px 0;
+}
+
+.about-us-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-us-titles h4 {
+    color: #56B280;
+    font-weight: 400;
+}
+
+.about-us-insurances {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-us-insurances svg {
+    width: 12px; /* Largeur personnalisée */
+    height: 12px; /* Hauteur personnalisée */
+    stroke: #000; /* Couleur des icônes */
+    vertical-align: middle; /* Alignement vertical */
+}
+
+.about-us-insurances li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+
+li .insurance {
+    font-weight: 600;
+}
+
+
+
+
+/* ===============================
+        Section : Testimonials
+=============================== */
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    gap: 40px;
+    background-color: #EFF8F3;
+}
+
+.testimonials-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonials-infos h4 {
+    color: #5E6E89;
+    font-weight: 600;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 0 128px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    gap: 0px;
+}
+
+.testimonial-profile {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 10px;
+    color: #56B280;
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #333;
+    margin: 10px 0;
+}
+
+.testimonial-name {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+
+/* ===============================
+    Section : Favorites
+=============================== */
+
+.favorites-section {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px;
+    gap: 40px;
+}
+
+.favorites-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.favorites-title h4 {
+    color: #5E6E89;
+    font-weight: 600;
+}
+
+/* ===============================
+    Section : Footer
+=============================== */
+
+.footer {
+    padding: 80px 128px;
+    background-color: #272727;
+}
+
+.footer > .content
+{
+    margin: 80px auto;
+    width: 100%;
+    max-width: 65rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo img {
+    width: 200px;
+    fill: none;
+}
+
+.footer-logo p {
+    max-width: 240px;
+    color: #E1E1E1;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links h6 {
+    color: #56B280;
+}
+
+.links p {
+    color: #E1E1E1;
+}
