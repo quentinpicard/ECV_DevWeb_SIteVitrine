@@ -161,6 +161,7 @@ align-items: center
 
 .product-card a {
     text-decoration: none;
+            cursor: pointer;
 }
 
 .product-image {
